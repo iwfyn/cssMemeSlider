@@ -6,16 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemeSlider</title>
     <link rel="stylesheet" href="./8.0.1_normalize.css">
-    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
-    <script>
-        addEventListener("DOMContentLoaded", (event) => {
-            document.querySelector('.slider__button').addEventListener('click', (e) => {
-                console.log('click');
-            })
-        });
-
-    </script>
 </head>
 
 <body>
@@ -23,16 +15,21 @@
         <div class="slider">
             <div class="slider__content-window">
                 <div class="slider__picture-feed">
-                    <div class="slider__slide">
+                    <input class="slider__input" type="radio" name="slide" id="s1" checked>
+                    <input class="slider__input" type="radio" name="slide" id="s2">
+                    <input class="slider__input" type="radio" name="slide" id="s3">
+                    <input class="slider__input" type="radio" name="slide" id="s4">
+                    <input class="slider__input" type="radio" name="slide" id="s5">
+                    <div class="slider__slide s1">
                         <img class="img" src="./img/businesslike-busy.gif" alt="gif-busy">
                     </div>
-                    <!-- <div class="slider__slide"><img class="img" src="./img/dd8e579c459beaa2a5a2a1fdd1ecd6b6.gif"
+                    <div class="slider__slide"><img class="img" src="./img/dd8e579c459beaa2a5a2a1fdd1ecd6b6.gif"
                             alt="gif-move"></div>
                     <div class="slider__slide"><img class="img" src="./img/dog-pool.gif" alt="gif-chillin"></div>
                     <div class="slider__slide"><img class="img" src="./img/funniest-gifs-37.gif" alt="gif-sportyCat">
                     </div>
                     <div class="slider__slide"><img class="img" src="./img/gifki_s_sobakami_01.gif" alt="gif-dogHello">
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <div class="slider__footer">
@@ -58,11 +55,21 @@
                     </div>
                 </div>
                 <div class="slider__pagination">
-                    <button class="slider__button">1</button>
-                    <button class="slider__button">2</button>
-                    <button class="slider__button">3</button>
-                    <button class="slider__button">4</button>
-                    <button class="slider__button">5</button>
+                    <label for="s1">
+                        <div class="slider__pagination-circle"></div>
+                    </label>
+                    <label for="s2">
+                        <div class="slider__pagination-circle"></div>
+                    </label>
+                    <label for="s3">
+                        <div class="slider__pagination-circle"></div>
+                    </label>
+                    <label for="s4">
+                        <div class="slider__pagination-circle"></div>
+                    </label>
+                    <label for="s5">
+                        <div class="slider__pagination-circle"></div>
+                    </label>
                 </div>
             </div>
         </div>
