@@ -162,28 +162,28 @@ body {
 
 /*Устанавливаем эффект активной кнопки по ее нажатию */
 #s1:checked~.slider__footer .slider__pagination>label:nth-child(1)>div {
-    border: 0.5vw solid yellowgreen;
+    border: 0.3vw solid yellowgreen;
     background-color: blue;
     cursor: default;
 }
 
 #s2:checked~.slider__footer .slider__pagination>label:nth-child(2)>div {
-    border: 0.5vw solid yellowgreen;
+    border: 0.3vw solid yellowgreen;
     background-color: blue;
 }
 
 #s3:checked~.slider__footer .slider__pagination>label:nth-child(3)>div {
-    border: 0.5vw solid yellowgreen;
+    border: 0.3vw solid yellowgreen;
     background-color: blue;
 }
 
 #s4:checked~.slider__footer .slider__pagination>label:nth-child(4)>div {
-    border: 0.5vw solid yellowgreen;
+    border: 0.3vw solid yellowgreen;
     background-color: blue;
 }
 
 #s5:checked~.slider__footer .slider__pagination>label:nth-child(5)>div {
-    border: 0.5vw solid yellowgreen;
+    border: 0.3vw solid yellowgreen;
     background-color: blue;
 }
 
@@ -206,4 +206,16 @@ body {
 
 #s5:checked~.slider__footer>.slider__description-window>.slider__description {
     margin-left: -320vw;
+}
+
+/* MediaQuery для мобильной версии слайдера */
+@media (max-width: 500px) {
+    .slider__footer {
+        flex-direction: column;
+        gap: 2.5vh;
+    }
+
+    .slider__pagination {
+        align-self: center;
+    }
 }
